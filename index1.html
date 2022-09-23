@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+    <title>Skills</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <!-- <h1>Skills</h1> -->
+    <div class="wrapper">
+        <div class="card">
+            <div class="circle">
+                <div class="bar"></div>
+                <div class="box"><span>85%</span></div>
+             
+            </div>
+            <div class="text">HTML & CSS</div>
+        </div>
+
+        <div class="card js">
+            <div class="circle">
+                <div class="bar"></div>
+                <div class="box"><span>70%</span></div>
+             
+            </div>
+            <div class="text">JAVASCRIPT</div>
+        </div>
+
+        <div class="card react">
+            <div class="circle">
+                <div class="bar"></div>
+                <div class="box"><span>60%</span></div>
+             
+            </div>
+            <div class="text">REACT JS</div>
+        </div>
+    </div>
+    <script>
+        let options = {
+            startAngle: -1.55,
+            size: 150,
+            value: 0.85,
+            fill: {color:"red"}
+        }
+
+        $(".circle .bar").circleProgress(options).or('circle-animation-progress',
+        function(event, progress,stepValue){ 
+
+        });
+        $(".js .bar").circleProgress({
+            value: 0.70,
+
+        });
+        $(".react .bar").circleProgress({
+            value: 0.60,
+
+        });
+
+    </script>
+
+</body>
+</html>
