@@ -118,7 +118,7 @@ h5{
 }
 
 .newsletter form{
-    width: 380px;
+/   width: 100%; /*width:380px; */
     max-width: 100%;
     position: relative;
 
@@ -157,7 +157,7 @@ h5{
 
 .about img{
     height: auto;
-    width: 430px;
+    width: 430px;/**/
 }
 
 .about-text{
@@ -165,7 +165,7 @@ h5{
 }
 
 .main{
-    width: 1130px;
+    width: 100%;/*1130px*/
     max-width: 95%;
     margin: 0 auto;
     display: flex;
@@ -239,7 +239,7 @@ button:hover{
 
 .card{
     height: 365px;
-    width: 355px;
+    width: 100%;/*355*/
     padding: 20px 35px;
     background: #191919;
     border-radius: 20px;
@@ -345,7 +345,7 @@ footer p:nth-child(1){
 footer p:nth-child(2){
     color: white;
     font-size: 17px;
-    width: 500px;
+    width: 100%;/*500px*/
     text-align: center;
     line-height: 26px;
 }
@@ -355,7 +355,7 @@ footer p:nth-child(2){
 }
 
 .social a{
-    width: 45px;
+    width: 5%;/*45px*/
     height: 45px;
     display: flex;
     align-items: center;
@@ -386,7 +386,7 @@ img{
     width: 20%; 
 }
 @media screen and (max-width: 800px) {
-  .img, .social a, .footer {
+  .img, .social a, .footer .newsletter form{
     width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
   }
 }
