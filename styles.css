@@ -383,5 +383,10 @@ footer p:nth-child(2){
 img{
     border-radius: 50px;
     /* height: 40px;*/
-    width: 200px; 
+    width: 20%; 
+}
+@media screen and (max-width: 800px) {
+  .img, .social a, .footer {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
 }
